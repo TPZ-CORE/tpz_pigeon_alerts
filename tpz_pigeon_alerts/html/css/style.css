@@ -1,0 +1,559 @@
+@font-face {
+	font-family: crock;
+	src: url(../font/crock.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: texat;
+	src: url(../font/texat.otf) format('opentype');
+}
+
+@font-face {
+	font-family: Kalam;
+	src: url(../font/Handwritten.woff) format('truetype');
+}
+
+@font-face {
+	font-family: Signature;
+	src: url(../font/Thesignature.ttf);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+
+	display: none;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: -37vw;
+	margin-top: 5vw;
+	overflow: hidden; /* Hide scrollbars */
+}
+
+#jobalerts {
+    display: inline-block;
+    margin-left: 45vw;
+    margin-right: auto;
+	margin-top: -5vw;
+    text-align: left;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+	overflow: hidden;
+	width: 80vw;
+	height:48vw;
+
+	justify-content: center;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+	
+}
+
+
+#personal_alerts_title_display {
+	position: absolute;
+	
+	font-family: "Kalam", Kalam, serif;
+
+	color: rgba(0, 0, 0, 0.699);
+
+	font-weight: bold;
+	font-size: 1.0vw;
+
+	width: 14vw;
+	margin-left: 20.5vw;
+	margin-top: 9.8vw;
+	text-align: left;
+
+
+}
+
+#alerts{
+	position: absolute;
+	width: 12vw;
+	height: 17.4vw;
+  
+
+	margin-left: 21.5vw;
+	margin-top: 14.9vw;
+  
+	overflow-y: scroll;
+	border-radius: 1px;
+
+	opacity: 1;
+
+}
+
+
+#alerts_title{
+	position: relative;
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	color: rgba(0, 0, 0, 0.822);
+	font-size: 1.3vw;
+
+	text-align: left;
+}
+
+  
+#alerts_who_display{
+	position: relative;
+
+	font-weight: bold;
+
+	font-family: "Kalam", Kalam, serif;
+	color: rgba(0, 0, 0, 0.822);
+	font-size: 1.1vw;
+
+	text-align: left;
+}
+
+#alerts_check {
+	position: absolute;
+
+	font-weight: bold;
+	margin-left: 10.5vw;
+	margin-top: -3vw;
+	width: 1vw;
+	font-size: 0.9vw;
+
+	color: rgba(0, 0, 0, 0.871);
+
+}
+
+#alerts_check:hover{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+#alerts_display_selected_text{
+	position: absolute;
+
+	font-weight: bold;
+
+	font-family: "Kalam", Kalam, serif;
+	color: #002b59e8;
+	font-size: 1.0vw;
+
+	text-align: left;
+
+	width: 20vw;
+	height: fit-content;
+
+	margin-left: 42vw;
+	margin-top: 13vw;
+}
+
+#alerts_display_selected_text_title {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.2vw;
+
+	color: rgba(0, 0, 0, 0.699);
+
+	text-align: left;
+
+	margin-top: 9.8vw;
+	margin-left: 42vw;
+
+
+	width: fit-content;
+}
+
+#alerts_display_selected_route {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.2vw;
+
+	color: rgba(0, 0, 0, 0.699);
+
+	text-align: left;
+
+	margin-top: 29.8vw;
+	margin-left: 42vw;
+
+
+	width: fit-content;
+}
+
+#alerts_display_selected_assisted_question_title {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.2vw;
+
+	color: rgba(0, 0, 0, 0.699);
+
+	text-align: left;
+
+	margin-top: 27.70vw;
+	margin-left: 42vw;
+
+
+	width: 20vw;
+	height: fit-content;
+
+	text-decoration: underline;
+}
+
+#alerts_display_selected_assisted_question {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.0vw;
+
+	color: rgba(145, 2, 2, 0.699);
+
+	text-align: left;
+
+	margin-top: 29.70vw;
+	margin-left: 42vw;
+
+
+	width: fit-content;
+	height: fit-content;
+	max-width: 20vw;
+}
+
+#alerts_display_selected_assisted_question:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#alerts_display_selected_assisted_question2 {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.0vw;
+
+	color: rgba(145, 2, 2, 0.699);
+
+	text-align: left;
+
+	margin-top: 31.70vw;
+	margin-left: 42vw;
+
+
+	width: fit-content;
+	height: fit-content;
+
+	max-width: 20vw;
+}
+
+#alerts_display_selected_assisted_question2:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+#alerts_display_selected_assisted_by {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.2vw;
+
+	color: rgba(145, 2, 2, 0.699);
+
+	text-align: left;
+
+	margin-top: 29.70vw;
+	margin-left: 42vw;
+
+
+	width: fit-content;
+
+	text-decoration: underline;
+}
+
+#alerts_display_selected_assisted_by_signature {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Signature", Signature, serif;
+	font-size: 1.4vw;
+
+	color: #002b59e8;
+
+	text-align: left;
+
+	margin-top: 31.70vw;
+	margin-left: 42vw;
+
+
+	width: fit-content;
+}
+/* Create */
+
+#alerts_create_text_area {
+	position: absolute;
+
+	font-weight: bold;
+
+	font-family: "Kalam", Kalam, serif;
+	color: #002b59e8;
+	font-size: 1.0vw;
+
+	text-align: left;
+
+	width: 22.5vw;
+	height: 18vw;
+
+	margin-left: 3.6vw;
+	margin-top: 3.7vw;
+
+	background-color: #00000000;
+
+	resize: none;
+	overflow-wrap: break-word;  
+	word-wrap: break-word; 
+	word-break: break-word;
+
+	overflow: auto;
+    outline: none;
+
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+	border: none;
+}
+
+#alerts_create_text_area_question_title {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.2vw;
+
+	color: rgba(0, 0, 0, 0.699);
+
+	text-align: left;
+
+	margin-top: 22.40vw;
+	margin-left: 3.6vw;
+
+
+	width: 20vw;
+	height: fit-content;
+
+	text-decoration: underline;
+}
+
+#alerts_create_text_area_question_checkbox {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.0vw;
+
+	color: rgba(145, 2, 2, 0.699);
+
+	text-align: left;
+
+	margin-top: 24.60vw;
+	margin-left: 3.6vw;
+
+	background-color: rgba(51, 36, 36, 0.76);
+	width: 0.9vw;
+	height: 0.9vw;
+}
+
+#alerts_create_text_area_question {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.0vw;
+
+	color: rgba(145, 2, 2, 0.699);
+
+	text-align: left;
+
+	margin-top: 24.60vw;
+	margin-left: 5.6vw;
+
+
+	width: fit-content;
+	height: fit-content;
+
+	max-width: 20vw;
+}
+
+#alerts_create_text_area_send_button {
+	position: absolute;
+	
+	font-weight: bold;
+	font-family: "Kalam", Kalam, serif;
+	font-size: 1.2vw;
+
+	color: rgba(0, 0, 0, 0.699);
+
+	text-align: left;
+
+	margin-top: 26.10vw;
+	margin-left: 20.6vw;
+
+	width: fit-content;
+	height: fit-content;
+
+	text-decoration: underline;
+}
+
+#alerts_create_text_area_send_button:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+input[type='checkbox'] {
+	position: relative;
+	cursor: pointer;
+	margin: 20px;
+}
+input[type='checkbox']:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0.8vw;
+	height: 0.8vw;
+	top: 50%;
+	left: 50%;
+	background-color: inherit;
+	outline: 1px rgba(255, 255, 255, 0.2) solid;
+	transform: translate(-50%, -50%);
+}
+input[type='checkbox']:checked:before {     
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0.8vw;
+	height: 0.8vw;
+	top: 50%;
+	left: 50%;
+	background-color: inherit;
+	outline: 1px rgba(255, 255, 255, 0.2) solid;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 4px 1px #fff;
+}
+
+input[type=text] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 0.8vw;
+	width: 90%;
+	color: rgba(255, 255, 255, 0.719);
+	height: 50px;
+	text-align: center;
+	background-color: rgb(27, 27, 27, 0.719);
+	border-color: rgb(58, 58, 58, 0.719);
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+select[type=field] {
+	font-family: "Prototype", serif;
+	font-size: 0.8vw;
+	width: 90%;
+	color: rgba(255, 255, 255, 0.719);
+	height: 50px;
+	text-align: center;
+	background-color: rgb(27, 27, 27, 0.719);
+	border-color: rgb(58, 58, 58, 0.719);
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+button {
+	font-family: "Prototype", serif;
+	display: block;
+	margin-top: 0px;
+	padding: 10px;
+	background-color: #5f1f1fb9;
+	border: 0;
+	color: rgba(255, 255, 255, 0.719);
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+
+	font-size: 0.8vw;
+}
+
+button:hover{
+
+	cursor: pointer;
+	background-color: rgb(87, 0, 0);
+	box-shadow: 0px 0px 15px rgb(87, 0, 0);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.hoverControl {
+    background-color: rgba(31, 31, 31, 0.589);
+	user-select: none;
+}
+
+
+
+.radio {
+	font-family: "Prototype", serif;
+	text-align: center;
+	font-size: 0.8vw;
+	color: rgba(255, 255, 255, 0.719);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+
+	width: 0.5vw;
+	border-radius: 0.1vw;
+	height: 0.55vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #00000000;
+	width: 0.2vw;
+	border-radius: 0.5vw;
+	height: 0.55vw;
+}
+
+*.unselectable {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+ 
+	/*
+	  Introduced in Internet Explorer 10.
+	  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+	*/
+	-ms-user-select: none;
+	user-select: none;
+}
