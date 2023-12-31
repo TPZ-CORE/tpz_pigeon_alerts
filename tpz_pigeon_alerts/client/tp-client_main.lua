@@ -73,6 +73,23 @@ end)
 --[[ General Events  ]]--
 -----------------------------------------------------------
 
+
+-- The following event is used when using the item for calling / whistling the trained pigeon.
+RegisterNetEvent("tpz_pigeon_alerts:whistleTrainedPigeon")
+AddEventHandler("tpz_pigeon_alerts:whistleTrainedPigeon", function()
+	local player = PlayerPedId()
+	local isDead = IsEntityDead(player)
+
+	if not isDead then
+
+		if ClientData.hasBoughtPigeon then
+			WhistleTrainedPigeon("default")
+		else
+			TriggerEvent('tpz_core:sendRightTipNotification', Locales['NO_TRAINED_PIGEON'], 3000)
+		end
+	end
+end)
+
 -- The following event is triggered only when sending an alert.
 RegisterNetEvent("tpz_pigeon_alerts:sendJobAlert")
 AddEventHandler("tpz_pigeon_alerts:sendJobAlert", function(msg, time, job, bliphash, x, y, z, shape, radius, bliptime)
