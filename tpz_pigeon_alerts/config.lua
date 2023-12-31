@@ -20,7 +20,9 @@ Config.CallPigeonCooldownAfterSendingAlertOnUnconciousPlayer = 100000
 Config.OpenStorePromptKey                  = 0x760A9C6F
 
 Config.PigeonFleePromptKey                 = 0xB2F377E8
-Config.CallPigeonCommand                   = "callpigeon"
+Config.CallPigeonCommand                   = "callpigeon" -- Set to false if you don't want to use a command but only item instead.
+
+Config.CallPigeonItem                      = "pigeon_whistle"
 
 Config.CancelRouteCommand                  = "cancelroute" -- The command to cancel the route, this command is also functional with other scripts to remove the route if bugged.
 Config.RouteBlipCooldown                   = 120 -- The time the route blip (not route marker) will be removed in seconds.
