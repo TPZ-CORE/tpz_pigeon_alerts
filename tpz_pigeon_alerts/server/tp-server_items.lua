@@ -18,3 +18,10 @@ TPZInv.registerUsableItem(Config.AlertsReviewBookItem, "tpz_pigeon_alerts", func
 
     TriggerClientEvent("tpz_pigeon_alerts:OpenJobAlertsUI", _source)
 end)
+
+TPZInv.registerUsableItem(Config.CallPigeonItem, "tpz_pigeon_alerts", function(data)
+	local _source = data.source
+
+    TriggerClientEvent("tpz_pigeon_alerts:whistleTrainedPigeon", _source)
+    TPZInv.closeInventory(_source)
+end)
