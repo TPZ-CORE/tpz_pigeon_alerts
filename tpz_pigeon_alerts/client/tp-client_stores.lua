@@ -55,7 +55,7 @@ OpenTrainedPigeonStore = function()
 		buttonparam2 = Locales['TRAINED_PIGEONS_STORE_DECLINE_BUTTON']
 	}
 
-	TriggerEvent("tp_inputs:getButtonInput", inputData, function(cb)
+	TriggerEvent("tpz_inputs:getButtonInput", inputData, function(cb)
 
 		if cb == "ACCEPT" then
 			TriggerServerEvent("tpz_pigeon_alerts:purchaseTrainedPigeon")
