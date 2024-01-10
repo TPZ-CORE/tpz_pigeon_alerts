@@ -24,3 +24,5 @@ client_scripts {
 files {
     'html/**/*'
 }
+
+lua54 'yes'
