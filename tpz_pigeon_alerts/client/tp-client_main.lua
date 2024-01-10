@@ -218,7 +218,7 @@ WhistleTrainedPigeon = function (cb)
 	
 			SetEntityCanBeDamaged(EntityHandler.Pigeon, false)
 			SetEntityInvincible(EntityHandler.Pigeon, true)
-			SetEntityCanBeDamagedByRelationshipGroup(EntityHandler.Pigeon, false, GetHashKey('PLAYER'))
+			SetEntityCanBeDamagedByRelationshipGroup(EntityHandler.Pigeon, false, joaat('PLAYER'))
 			
 			Wait(500)
 	
