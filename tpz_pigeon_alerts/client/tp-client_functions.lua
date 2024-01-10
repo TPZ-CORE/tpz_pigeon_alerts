@@ -125,7 +125,7 @@ end
 -----------------------------------------------------------
 
 LoadModel = function(model)
-    local model = GetHashKey(model)
+    local model = joaat(model)
 
     if IsModelValid(model) then
         RequestModel(model)
