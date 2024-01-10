@@ -106,7 +106,7 @@ RegisterNUICallback('routeSelectedRegisteredAlert', function(data)
 	local playerPed = PlayerPedId()
 	local currentCoords = GetEntityCoords(playerPed)
 
-	StartGpsMultiRoute(GetHashKey("COLOR_PURPLE"), true, true)
+	StartGpsMultiRoute(joaat("COLOR_PURPLE"), true, true)
 
 	AddPointToGpsMultiRoute(currentCoords)
 	AddPointToGpsMultiRoute(newCoords.x, newCoords.y, newCoords.z)
